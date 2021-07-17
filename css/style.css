@@ -899,6 +899,15 @@ template {
   .slider {
     height: 350px;
   }
+  .slider-button {
+    width: 12px;
+    height: 12px;
+  }
+
+  .swiper-slide__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 
   .hotel-right {
     flex-direction: column;
@@ -926,7 +935,7 @@ template {
   }
 
   .hotel__slider {
-    height: 210px;
+    height: 179px;
     margin-bottom: 20px;
   }
 
