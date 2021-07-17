@@ -828,12 +828,13 @@ template {
     width: 100%;
   }
 }
-@media (max-width 576px) {
+@media (max-width: 576px) {
   .logo {
-    width: 9px;
+    width: 99px;
   }
 
-  .slider {
-    height: 250px;
+  .hotel__slider {
+    height: 210px;
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
