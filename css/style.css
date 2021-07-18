@@ -1009,10 +1009,10 @@ template {
     order: -1;
     margin-left: 0;
   }
-  .hotel__slider {
+  .hotel-slider {
     height: 350px;
   }
-  .hotel-button {
+  .hotel-slider__button {
     width: 12px;
     height: 12px;
   }
