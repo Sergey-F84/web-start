@@ -507,6 +507,9 @@ template {
   display: flex;
   justify-content: space-between;
 }
+.hotel-slider {
+  margin-left: 0;
+}
 .hotel-right {
   display: flex;
   flex-direction: column;
