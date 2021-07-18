@@ -762,6 +762,7 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1065,6 +1066,9 @@ template {
     right: 50%;
     transform: translate(50%, 0);
     margin-right: -30%;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 @media (max-width: 576px) {
