@@ -1260,11 +1260,12 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 78px;
+    top: 74px;
     padding-top: 30px;
   }
   .navbar-navigate--visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     flex-direction: column;
