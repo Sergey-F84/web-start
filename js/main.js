@@ -16,3 +16,10 @@ var reviewsslider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
   },
 });
+
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", function () {
+  console.log('click on');
+  document.querySelector(".navbar-navigate")
+  .classList.toggle("navbar-navigate--visible");
+});
