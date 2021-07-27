@@ -189,6 +189,8 @@
   .card
     width: 48%
   .footer
+    &-wrapper
+      grid-gap: 28px
     &__input
       flex-basis: 100%
 @media (max-width: 576px)
@@ -243,6 +245,22 @@
       &-details
         grid-row: 6
         grid-column: 1
+        width: 87vw
       &-form
         grid-row: 7
         grid-column: 1
+        width: 87vw
+    &__form
+      flex-direction: column
+      align-items: inherit
+    &__input
+      width: 86vw
+      padding-top: 18px
+      padding-bottom: 18px
+    &__message
+      width: 86vw
+    &__button
+      align-self: flex-start
+      order: 1
+    &__info
+      margin-bottom: 15px
