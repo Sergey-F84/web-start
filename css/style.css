@@ -1493,6 +1493,10 @@ template {
     width: 70vw;
     padding: 20px 30px;
   }
+  .modal__dialog--visible {
+    display: block;
+    overflow: auto;
+  }
 }
 @media (max-width: 576px) {
   .logo {
@@ -1599,6 +1603,7 @@ template {
 
   .modal__dialog {
     width: 95%;
+    height: 95%;
   }
   .modal__button {
     order: 1;
