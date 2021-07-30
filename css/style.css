@@ -1598,7 +1598,7 @@ template {
   }
 
   .modal__dialog {
-    width: 100%;
+    width: 95%;
   }
   .modal__button {
     order: 1;
