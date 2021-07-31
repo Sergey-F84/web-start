@@ -64,6 +64,7 @@ $(document).ready(function() {
         },
         phone: {
           required: "Please specify your phone number",        
+          minlength: "Enter full phone number",        
         },
         email: {
           required: "Please specify your email",
