@@ -35,21 +35,40 @@ $(document).ready(function() {
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
-  }
+  };
   function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-  }
+  };
 
-  $(document).keydown("which == 27", function closeModal(event) {
-    event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
+  // $(document).keydown('which == 27', function closeModal(event) {
+  //   event.preventDefault();
+  //   var modalOverlay = $(".modal__overlay");
+  //   var modalDialog = $(".modal__dialog");
+  //   modalOverlay.removeClass("modal__overlay--visible");
+  //   modalDialog.removeClass("modal__dialog--visible");
+  // });
+
+  //обработка форм
+  $('.form').each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Minimum number of characters 2",
+        },
+        phone: {
+          required: "Please specify your phone number",        
+        },
+        email: {
+          required: "Please specify your email",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });  
   });
-
 });
