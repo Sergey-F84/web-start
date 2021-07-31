@@ -50,7 +50,6 @@ img {
 
 .form {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -1093,6 +1092,8 @@ template {
   margin-bottom: 23px;
 }
 .footer__info {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1163,6 +1164,8 @@ template {
   margin-top: 15px;
 }
 .modal__info {
+  display: flex;
+  align-items: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;

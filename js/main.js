@@ -44,13 +44,14 @@ $(document).ready(function() {
     modalDialog.removeClass("modal__dialog--visible");
   };
 
-  // $(document).keydown('which == 27', function closeModal(event) {
-  //   event.preventDefault();
-  //   var modalOverlay = $(".modal__overlay");
-  //   var modalDialog = $(".modal__dialog");
-  //   modalOverlay.removeClass("modal__overlay--visible");
-  //   modalDialog.removeClass("modal__dialog--visible");
-  // });
+  $(document).keydown(function (e) {
+    if (e.keyCode == 27) {
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+    }
+  });
 
   //обработка форм
   $('.form').each(function() {
@@ -71,4 +72,6 @@ $(document).ready(function() {
       },
     });  
   });
+  $('#phone').mask('+7 (999) 999-9999');
+  $('#phone1').mask('+7 (999) 999-9999');
 });
