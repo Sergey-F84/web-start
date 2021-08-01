@@ -56,7 +56,7 @@ $(document).ready(function() {
   //обработка форм
   $('.form').each(function() {
     $(this).validate({
-      errorClass: "invalid",
+      errorClass: "invalid invalid1",
       messages: {
         name: {
           required: "Please specify your name",
